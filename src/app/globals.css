@@ -39,4 +39,15 @@ input {
 ul {
   list-style: none;
   text-align: left;
+  display: flex;
+}
+
+ul li {
+  width: 25%;
+  height: 80px;
+  border: 1px solid;
+  margin: 10px;
+  padding-top: 50px;
+  background-color: gray;
+  text-align: center;
 }
