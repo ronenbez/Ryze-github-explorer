@@ -4,6 +4,7 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 a {
@@ -22,8 +23,20 @@ button {
   padding: 8px 12px;
   cursor: pointer;
   border-radius: 5px;
+  margin-left: 20px;
 }
 
 button:hover {
   background-color: #024ea2;
+}
+
+input {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
 }
