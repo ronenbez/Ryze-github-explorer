@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Repo, Contributor } from '../../utils/api';
+import { Repo, Contributor } from '../utils/api';
 
 const RepoDetails = () => {
   const router = useRouter();
