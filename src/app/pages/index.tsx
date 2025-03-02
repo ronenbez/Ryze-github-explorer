@@ -1,15 +1,7 @@
-// pages/index.tsx
 import { useState } from 'react';
 import axios from 'axios';
 import Link from 'next/link';
-
-export interface Repo {
-    id: Number;
-    name: String;
-    description: String;
-    language: String;
-    stargazers_count: Number;
-}
+import { Repo } from '../utils/api';
 
 const Home = () => {
   const [username, setUsername] = useState('');
