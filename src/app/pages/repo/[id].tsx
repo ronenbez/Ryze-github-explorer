@@ -1,13 +1,13 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import Repo from '../index';
+import { Repo, Contributor } from '../../utils/api';
 
 const RepoDetails = () => {
   const router = useRouter();
   const { id } = router.query;
-  const [repo, setRepo] = useState<typeof Repo | null>(null);
-  const [contributors, setContributors] = useState([]);
+  const [repo, setRepo] = useState<Repo | null>(null);
+  const [contributors, setContributors] = useState<Contributor[]>([]);
 
   useEffect(() => {
     if (id) {

@@ -1,4 +1,21 @@
   import axios from 'axios';
+
+  export interface Repo {
+    id: number;
+    name: string;
+    description: string;
+    language: string;
+    stargazers_count: number;
+    html_url: string;
+  }
+  
+  export interface Contributor {
+    id: number;
+    login: string;
+    avatar_url: string;
+    html_url: string;
+    contributions: number;
+  }
   
   export const fetchRepos = async (username: string) => {
     const cachedRepos = localStorage.getItem(username);

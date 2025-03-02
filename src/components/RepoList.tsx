@@ -1,7 +1,12 @@
 import Link from 'next/link';
-import Repo from '../app/pages/index'; 
+import { Repo } from '../app/utils/api';
 
-const RepoList = ({ repos, onSort }) => {
+interface Props {
+    repos: Repo[];
+    onSort: () => void;
+  }
+
+const RepoList: React.FC<Props> = ({ repos, onSort }) => {
   return (
     <div>
       <button onClick={onSort}>Sort by Stars</button>

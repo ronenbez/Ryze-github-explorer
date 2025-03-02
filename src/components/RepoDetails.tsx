@@ -1,4 +1,12 @@
-const RepoDetails = ({ repo, contributors, onBack }) => {
+import { Repo, Contributor } from '../app/utils/api';
+
+interface Props {
+  repo: Repo;
+  contributors: Contributor[];
+  onBack: () => void;
+}
+
+const RepoDetails: React.FC<Props> = ({ repo, contributors, onBack }) => {
     if (!repo) return <p>Loading...</p>;
   
     return (
